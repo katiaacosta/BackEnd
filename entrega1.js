@@ -1,9 +1,9 @@
 class Usuario {
 
-  constructor(nombre,apellido,Libros,mascotas){
+  constructor(nombre,apellido,libros,mascotas){
     this.nombre = nombre,
     this.apellido = apellido,
-    this.Libros = Libros,
+    this.libros = libros,
     this. mascotas = mascotas
   } 
 
@@ -21,21 +21,21 @@ class Usuario {
       nombre : nom,
       autor : au
     }
-    this.Libros.push(libroNuevo)
+    this.libros.push(libroNuevo)
   }
 
   getBookNames(){
-    const nombre = (Libros) => {
-      return Libros.nombre
+    const nombre = (libros) => {
+      return libros.nombre
     }
 
-    const salida = Libros.map(nombre)
-    console.log("Libros: " + salida);
+    const salida = libros.map(nombre)
+    console.log("libros: " + salida);
 
   }
 }
 
-const Libros = [
+const libros = [
   {
     nombre: "El arte de la doma clasica",
     autor: "Pepito1"
@@ -64,7 +64,7 @@ const Libros = [
 
 const mascotas = ["gato", "perro", "conejo"];
 
-const usuario = new Usuario("Katia","Acosta",Libros,mascotas)
+const usuario = new Usuario("Katia","Acosta",libros,mascotas)
 usuario.getFullName();
 usuario.countMascotas();
 usuario.addBook("nombreLibroNuevo", "autorLibroNuevo"); 
