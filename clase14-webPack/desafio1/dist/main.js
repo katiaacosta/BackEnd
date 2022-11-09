@@ -1,0 +1,1 @@
+(()=>{"use strict";(async()=>{await new Promise(((e,o)=>{setTimeout((()=>{console.log("mensaje1"),e()}),1e3)})),await new Promise(((e,o)=>{setTimeout((()=>{console.log("mensaje2"),e()}),2e3)})),await new Promise(((e,o)=>{setTimeout((()=>{console.log("mensaje3"),e()}),3e3)}))})()})();
