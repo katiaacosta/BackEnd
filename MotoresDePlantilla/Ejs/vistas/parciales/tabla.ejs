@@ -1,0 +1,23 @@
+<table style="width:50%">
+    <tr>
+      <th id="id">Id</th>
+      <th id="titleHeader">Title</th>
+      <th id="priceHeader">Price</th>
+      <!-- <th id="edadHeader">Edad</th> -->
+    </tr>
+    <% productos.forEach(anItem=> { %>
+      <tr>
+        <td>
+          <%= anItem.id %>
+        </td>
+        <td>
+          <%= anItem.title %>
+        </td>
+        <td>
+          <%= anItem.price %>
+        </td>
+      </tr>
+      <% }) %>
+  </table>
+
+
